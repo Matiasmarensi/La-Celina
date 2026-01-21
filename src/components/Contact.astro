@@ -1,87 +1,229 @@
 <section
-    id="contacto"
-     class="relative min-h-screen flex flex-col items-center justify-start py-8 bg-[#234332] font-[Merriweather,serif]"
+  id="contacto"
+  class="relative min-h-screen flex flex-col items-center justify-start py-8 bg-[#234332] font-[Merriweather,serif] scroll-mt-24"
 >
-    <!-- Fondo vidrio principal -->
-   <div class="w-full max-w-7xl px-4 sm:px-8 rounded-3xl p-8 flex flex-col gap-12">
-        <!-- Título de sección -->
-        <h2
-            class="text-3xl sm:text-4xl font-extrabold text-[#CCCCCC] text-center animate-fade-in-up"
-        >
-            Contacto
-        </h2>
-
-        <!-- Grid de Ventas y Compras -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
-  <!-- Ventas -->
-<div class="w-full rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]
-            bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl shadow-black/20">
-    <h3 class="text-xl font-semibold mb-4 text-[#CCCCCC]">Ventas</h3>
-    <p class="mb-4 text-[#CCCCCC]">
-      Si te hemos vendido algo y quieres comunicarte con nosotros:
-    </p>
-    <ul class="space-y-2 text-[#CCCCCC]">
-      <li class="flex items-center gap-2">
-        <img src="/mail.png" alt="Correo" class="w-5 h-5" />
-        <a href="mailto:ventas@lacelinaagricolaganadera.com" class="hover:underline text-[#CCCCCC] break-all sm:break-normal">
-          ventas@lacelinaagricolaganadera.com
-        </a>
-      </li>
-      <li class="flex items-center gap-2">
-        <img src="/c.png" alt="WhatsApp" class="w-5 h-5" />
-        <a href="https://wa.me/5493413204697" target="_blank" class="hover:underline text-[#CCCCCC] break-all sm:break-normal">
-          +54 9 3413 20-4697
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Compras -->
- <div class="w-full rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]
-            bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl shadow-black/20">
-    <h3 class="text-xl font-semibold mb-4 text-[#CCCCCC]">Compras</h3>
-    <p class="mb-4 text-[#CCCCCC]">
-      Si te hemos comprado algo y quieres comunicarte con nosotros:
-    </p>
-    <ul class="space-y-2 text-[#CCCCCC]">
-      <li class="flex items-center gap-2">
-        <img src="/mail.png" class="w-5 h-5" alt="Correo" />
-        <a href="mailto:compras@lacelinaagricolaganadera.com" class="hover:underline text-[#CCCCCC] break-all sm:break-normal">
-          compras@lacelinaagricolaganadera.com
-        </a>
-      </li>
-      <li class="flex items-center gap-2">
-        <img src="/c.png" alt="WhatsApp" class="w-5 h-5" />
-        <a href="https://wa.me/5491163651351" target="_blank" class="hover:underline text-[#CCCCCC] break-all sm:break-normal">
-          +54 9 11 6365-1351
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-        <!-- Información legal -->
-        <!-- Información legal -->
-     <div class="w-full rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]
-            bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl shadow-black/20">
-            <h3
-                class="text-xl font-semibold mb-6 text-[#CCCCCC] text-center italic"
-            >
-                Información legal
-            </h3>
-            <ul class="space-y-2 text-[#CCCCCC] text-sm list-none">
-                <li>
-                    • <strong>Razón Social:</strong> AGRICOLA GANADERA CELINA SA
-                </li>
-                <li>• <strong>CUIT:</strong> 30-71003415-6</li>
-                <li>
-                    • <strong>Condición frente al IVA:</strong> IVA Responsable Inscripto
-                </li>
-                <li>
-                    • <strong>Domicilio Comercial:</strong> Jujuy 1389 Piso 21 Dpto
-                    "A" – Rosario Norte, Santa Fe
-                </li>
-            </ul>
-        </div>
+  <div class="flex flex-col items-center gap-2 mb-4">
+    <div class="flex gap-1 mt-1">
+      <div class="w-2 2h-2 rounded-full bg-[#3E7C4C]"></div>
+      <div class="w-2 2h-2 rounded-full bg-[#3E7C4C]/50"></div>
+      <div class="w-2 h-2 rounded-full bg-[#3E7C4C]/20"></div>
     </div>
+
+    <div class="flex items-center gap-4 w-full max-w-lg">
+      <div
+        class="h-px flex-1 bg-gradient-to-r from-transparent to-[#3E7C4C]/50"
+      >
+      </div>
+
+      <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight">
+        Contacto
+      </h2>
+
+      <div
+        class="h-px flex-1 bg-gradient-to-l from-transparent to-[#3E7C4C]/50"
+      >
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
+    <div
+      class="w-full rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03] bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl shadow-black/20"
+    >
+      <h3 class="text-xl font-semibold mb-4 text-white">Ventas</h3>
+
+      <p class="mb-4 text-[#CCCCCC] text-sm">
+        Si te hemos vendido algo y quieres comunicarte con nosotros:
+      </p>
+
+      <ul class="space-y-3 text-[#CCCCCC]">
+        <li class="flex items-center gap-3 group">
+          <img src="/mail.png" alt="Correo" class="w-5 h-5 opacity-80" />
+          <a
+            href="mailto:ventas@lacelinaagricolaganadera.com"
+            class="hover:text-white transition-colors text-[13px] sm:text-sm block truncate"
+          >
+            ventas@lacelinaagricolaganadera.com
+          </a>
+          <button
+            class="copy-btn p-1.5 rounded-md bg-white/5 hover:bg-white/20 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
+            data-copy="ventas@lacelinaagricolaganadera.com"
+            title="Copiar correo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 stroke-[#CCCCCC]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </button>
+        </li>
+        <li class="flex items-center gap-3">
+          <img src="/c.png" alt="WhatsApp" class="w-5 h-5 opacity-80" />
+
+          <a
+            href="https://wa.me/5493413204697"
+            target="_blank"
+            class="hover:text-white transition-colors text-sm"
+            >+54 9 3413 20-4697</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="w-full rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03] bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl shadow-black/20"
+    >
+      <h3 class="text-xl font-semibold mb-4 text-white">Compras</h3>
+
+      <p class="mb-4 text-[#CCCCCC] text-sm">
+        Si te hemos comprado algo y quieres comunicarte con nosotros:
+      </p>
+
+      <ul class="space-y-3 text-[#CCCCCC]">
+        <li class="flex items-center gap-3 group">
+          <img src="/mail.png" alt="Correo" class="w-5 h-5 opacity-80" />
+          <a
+            href="mailto:compras@lacelinaagricolaganadera.com"
+            class="hover:text-white transition-colors text-[13px] sm:text-sm block truncate"
+          >
+            compras@lacelinaagricolaganadera.com
+          </a>
+          <button
+            class="copy-btn p-1.5 rounded-md bg-white/5 hover:bg-white/20 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
+            data-copy="compras@lacelinaagricolaganadera.com"
+            title="Copiar correo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 stroke-[#CCCCCC]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </button>
+        </li>
+
+        <li class="flex items-center gap-3">
+          <img src="/c.png" alt="WhatsApp" class="w-5 h-5 opacity-80" />
+
+          <a
+            href="https://wa.me/5491163651351"
+            target="_blank"
+            class="hover:text-white transition-colors text-sm"
+            >+54 9 11 6365-1351</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="w-full max-w-3xl mx-auto mt-4">
+    <div
+      class="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8"
+    >
+    </div>
+
+    <div class="px-6 py-4 rounded-xl bg-black/10 border border-white/5">
+      <h3
+        class="text-sm font-bold mb-4 text-[#CCCCCC]/60 uppercase tracking-widest text-center"
+      >
+        Información Institucional
+      </h3>
+
+      <ul
+        class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-[#CCCCCC]/80 text-xs sm:text-[13px] list-none"
+      >
+        <li class="flex flex-col border-l border-[#3E7C4C]/40 pl-3">
+          <span class="text-[10px] uppercase text-[#3E7C4C] font-bold"
+            >Razón Social</span
+          >
+
+          <span class="font-medium text-white/70"
+            >AGRICOLA GANADERA CELINA SA</span
+          >
+        </li>
+
+        <li class="flex flex-col border-l border-[#3E7C4C]/40 pl-3">
+          <span class="text-[10px] uppercase text-[#3E7C4C] font-bold"
+            >CUIT</span
+          >
+
+          <span class="font-medium text-white/70">30-71003415-6</span>
+        </li>
+
+        <li class="flex flex-col border-l border-[#3E7C4C]/40 pl-3">
+          <span class="text-[10px] uppercase text-[#3E7C4C] font-bold"
+            >Condición IVA</span
+          >
+
+          <span class="font-medium text-white/70"
+            >IVA Responsable Inscripto</span
+          >
+        </li>
+
+        <li class="flex flex-col border-l border-[#3E7C4C]/40 pl-3">
+          <span class="text-[10px] uppercase text-[#3E7C4C] font-bold"
+            >Domicilio Comercial</span
+          >
+
+          <span class="font-medium text-white/70 italic"
+            >Jujuy 1389 Piso 21 Dpto "A" – Rosario</span
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
+
+<script>
+  const setupCopy = () => {
+    const buttons = document.querySelectorAll(".copy-btn");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const textToCopy = btn.getAttribute("data-copy");
+        if (!textToCopy) return;
+
+        try {
+          await navigator.clipboard.writeText(textToCopy);
+
+          // Feedback visual: Cambiar icono por un check
+          const originalHTML = btn.innerHTML;
+          btn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 stroke-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    `;
+
+          // Revertir icono después de 2 segundos
+          setTimeout(() => {
+            btn.innerHTML = originalHTML;
+          }, 2000);
+        } catch (err) {
+          console.error("Error al copiar: ", err);
+        }
+      });
+    });
+  };
+
+  // Inicializar
+  setupCopy();
+  // Re-ejecutar si usas ViewTransitions
+  document.addEventListener("astro:after-swap", setupCopy);
+</script>

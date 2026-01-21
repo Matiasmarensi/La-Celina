@@ -1,24 +1,35 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/icon.ico" />
+
+    <title>Agrícola Ganadera Celina S.A.</title>
+    <meta
+      name="description"
+      content="Agrícola Ganadera Celina SA - Producción y comercialización agropecuaria"
+    />
+    <meta name="generator" content={Astro.generator} />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
-<style>
-html, body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
+<style is:global>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
 </style>
-
-
