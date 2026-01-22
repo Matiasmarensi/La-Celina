@@ -1,229 +1,476 @@
 <section
   id="contacto"
-  class="relative min-h-screen flex flex-col items-center justify-start py-8 bg-[#234332] font-[Merriweather,serif] scroll-mt-24"
+  class="relative min-h-screen flex flex-col items-center justify-start py-16 px-4 bg-[#234332] font-[Merriweather,serif] scroll-mt-24 overflow-hidden"
 >
-  <div class="flex flex-col items-center gap-2 mb-4">
-    <div class="flex gap-1 mt-1">
-      <div class="w-2 2h-2 rounded-full bg-[#3E7C4C]"></div>
-      <div class="w-2 2h-2 rounded-full bg-[#3E7C4C]/50"></div>
-      <div class="w-2 h-2 rounded-full bg-[#3E7C4C]/20"></div>
+  <!-- Background decoration -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div
+      class="absolute -top-24 -right-24 w-96 h-96 bg-[#3E7C4C]/20 rounded-full blur-3xl"
+    >
     </div>
+    <div
+      class="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-[#3E7C4C]/10 rounded-full blur-3xl"
+    >
+    </div>
+  </div>
 
-    <div class="flex items-center gap-4 w-full max-w-lg">
-      <div
-        class="h-px flex-1 bg-gradient-to-r from-transparent to-[#3E7C4C]/50"
+  <div class="relative z-10 w-full max-w-5xl mx-auto">
+    <!-- Header -->
+    <div class="flex flex-col items-center gap-4 mb-12">
+      <span
+        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#3E7C4C]/20 border border-[#3E7C4C]/30 text-[#8FBF9A] text-xs font-medium tracking-wide uppercase"
       >
-      </div>
+        <span class="w-1.5 h-1.5 rounded-full bg-[#8FBF9A] animate-pulse"
+        ></span>
+        Estamos para ayudarte
+      </span>
 
-      <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight">
+      <h2
+        class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight text-center"
+      >
         Contacto
       </h2>
 
+      <p class="text-[#CCCCCC]/80 text-center max-w-md text-sm sm:text-base">
+        Comunicate con nosotros a traves de cualquiera de nuestros canales
+      </p>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+      <!-- Ventas Card -->
       <div
-        class="h-px flex-1 bg-gradient-to-l from-transparent to-[#3E7C4C]/50"
+        class="group relative rounded-2xl p-1 bg-gradient-to-br from-[#3E7C4C]/50 to-transparent"
       >
+        <div
+          class="relative h-full rounded-xl p-6 sm:p-8 bg-[#1a3528] border border-[#3E7C4C]/20 transition-all duration-500 group-hover:bg-[#1e3d2e]"
+        >
+          <!-- Icon -->
+          <div
+            class="w-14 h-14 rounded-xl bg-gradient-to-br from-[#3E7C4C] to-[#2d5a3a] flex items-center justify-center mb-5 shadow-lg shadow-[#3E7C4C]/20 transition-transform duration-300 group-hover:scale-110"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              ></path>
+            </svg>
+          </div>
+
+          <h3 class="text-2xl font-bold mb-2 text-white">Ventas</h3>
+          <p class="mb-6 text-[#CCCCCC]/70 text-sm leading-relaxed">
+            Si te hemos vendido algo y quieres comunicarte con nosotros:
+          </p>
+
+          <div class="space-y-4">
+            <!-- Email -->
+            <a
+              href="mailto:ventas@lacelinaagricolaganadera.com"
+              class="group/link flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-[#3E7C4C]/20 border border-transparent hover:border-[#3E7C4C]/30 transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-[#3E7C4C]/20 flex items-center justify-center group-hover/link:bg-[#3E7C4C]/40 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 text-[#8FBF9A]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p
+                  class="text-[10px] uppercase tracking-wider text-[#8FBF9A] font-semibold mb-0.5"
+                >
+                  Email
+                </p>
+                <p
+                  class="text-white text-sm truncate group-hover/link:text-[#8FBF9A] transition-colors"
+                >
+                  ventas@lacelinaagricolaganadera.com
+                </p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-[#CCCCCC]/40 group-hover/link:text-[#8FBF9A] group-hover/link:translate-x-1 transition-all"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/5493413204697"
+              target="_blank"
+              rel="noopener"
+              class="group/link flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-[#25D366]/10 border border-transparent hover:border-[#25D366]/30 transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-[#25D366]/20 flex items-center justify-center group-hover/link:bg-[#25D366]/30 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 text-[#25D366]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p
+                  class="text-[10px] uppercase tracking-wider text-[#25D366] font-semibold mb-0.5"
+                >
+                  WhatsApp
+                </p>
+                <p
+                  class="text-white text-sm group-hover/link:text-[#25D366] transition-colors"
+                >
+                  +54 9 3413 20-4697
+                </p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-[#CCCCCC]/40 group-hover/link:text-[#25D366] group-hover/link:translate-x-1 transition-all"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compras Card -->
+      <div
+        class="group relative rounded-2xl p-1 bg-gradient-to-br from-[#3E7C4C]/50 to-transparent"
+      >
+        <div
+          class="relative h-full rounded-xl p-6 sm:p-8 bg-[#1a3528] border border-[#3E7C4C]/20 transition-all duration-500 group-hover:bg-[#1e3d2e]"
+        >
+          <!-- Icon -->
+          <div
+            class="w-14 h-14 rounded-xl bg-gradient-to-br from-[#3E7C4C] to-[#2d5a3a] flex items-center justify-center mb-5 shadow-lg shadow-[#3E7C4C]/20 transition-transform duration-300 group-hover:scale-110"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+              ></path>
+            </svg>
+          </div>
+
+          <h3 class="text-2xl font-bold mb-2 text-white">Compras</h3>
+          <p class="mb-6 text-[#CCCCCC]/70 text-sm leading-relaxed">
+            Si te hemos comprado algo y quieres comunicarte con nosotros:
+          </p>
+
+          <div class="space-y-4">
+            <!-- Email -->
+            <a
+              href="mailto:compras@lacelinaagricolaganadera.com"
+              class="group/link flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-[#3E7C4C]/20 border border-transparent hover:border-[#3E7C4C]/30 transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-[#3E7C4C]/20 flex items-center justify-center group-hover/link:bg-[#3E7C4C]/40 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 text-[#8FBF9A]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p
+                  class="text-[10px] uppercase tracking-wider text-[#8FBF9A] font-semibold mb-0.5"
+                >
+                  Email
+                </p>
+                <p
+                  class="text-white text-sm truncate group-hover/link:text-[#8FBF9A] transition-colors"
+                >
+                  compras@lacelinaagricolaganadera.com
+                </p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-[#CCCCCC]/40 group-hover/link:text-[#8FBF9A] group-hover/link:translate-x-1 transition-all"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/5491163651351"
+              target="_blank"
+              rel="noopener"
+              class="group/link flex items-center gap-4 p-3 rounded-xl bg-white/5 hover:bg-[#25D366]/10 border border-transparent hover:border-[#25D366]/30 transition-all duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-[#25D366]/20 flex items-center justify-center group-hover/link:bg-[#25D366]/30 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 text-[#25D366]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p
+                  class="text-[10px] uppercase tracking-wider text-[#25D366] font-semibold mb-0.5"
+                >
+                  WhatsApp
+                </p>
+                <p
+                  class="text-white text-sm group-hover/link:text-[#25D366] transition-colors"
+                >
+                  +54 9 11 6365-1351
+                </p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-[#CCCCCC]/40 group-hover/link:text-[#25D366] group-hover/link:translate-x-1 transition-all"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Institutional Info -->
+    <div class="relative">
+      <div
+        class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#3E7C4C]/40 to-transparent"
+      >
+      </div>
+
+      <div class="pt-10">
+        <div class="text-center mb-8">
+          <span
+            class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-[#8FBF9A]/60 font-semibold"
+          >
+            <span class="w-8 h-px bg-[#3E7C4C]/40"></span>
+            Informacion Institucional
+            <span class="w-8 h-px bg-[#3E7C4C]/40"></span>
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div
+            class="group p-5 rounded-xl bg-[#1a3528]/50 border border-[#3E7C4C]/10 hover:border-[#3E7C4C]/30 transition-all duration-300"
+          >
+            <div class="flex items-start gap-3">
+              <div
+                class="w-8 h-8 rounded-lg bg-[#3E7C4C]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#3E7C4C]/30 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-[#8FBF9A]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <p
+                  class="text-[10px] uppercase tracking-wider text-[#3E7C4C] font-bold mb-1"
+                >
+                  Razon Social
+                </p>
+                <p class="text-white/80 text-sm font-medium leading-snug">
+                  AGRICOLA GANADERA CELINA SA
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group p-5 rounded-xl bg-[#1a3528]/50 border border-[#3E7C4C]/10 hover:border-[#3E7C4C]/30 transition-all duration-300"
+          >
+            <div class="flex items-start gap-3">
+              <div
+                class="w-8 h-8 rounded-lg bg-[#3E7C4C]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#3E7C4C]/30 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-[#8FBF9A]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <p
+                  class="text-[10px] uppercase tracking-wider text-[#3E7C4C] font-bold mb-1"
+                >
+                  CUIT
+                </p>
+                <p class="text-white/80 text-sm font-medium font-mono">
+                  30-71003415-6
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group p-5 rounded-xl bg-[#1a3528]/50 border border-[#3E7C4C]/10 hover:border-[#3E7C4C]/30 transition-all duration-300"
+          >
+            <div class="flex items-start gap-3">
+              <div
+                class="w-8 h-8 rounded-lg bg-[#3E7C4C]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#3E7C4C]/30 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-[#8FBF9A]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <p
+                  class="text-[10px] uppercase tracking-wider text-[#3E7C4C] font-bold mb-1"
+                >
+                  Condicion IVA
+                </p>
+                <p class="text-white/80 text-sm font-medium leading-snug">
+                  IVA Responsable Inscripto
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group p-5 rounded-xl bg-[#1a3528]/50 border border-[#3E7C4C]/10 hover:border-[#3E7C4C]/30 transition-all duration-300"
+          >
+            <div class="flex items-start gap-3">
+              <div
+                class="w-8 h-8 rounded-lg bg-[#3E7C4C]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#3E7C4C]/30 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-[#8FBF9A]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <p
+                  class="text-[10px] uppercase tracking-wider text-[#3E7C4C] font-bold mb-1"
+                >
+                  Domicilio Comercial
+                </p>
+                <p class="text-white/80 text-sm font-medium leading-snug">
+                  Jujuy 1389 Piso 21 Dpto "A" - Rosario
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
-    <div
-      class="w-full rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03] bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl shadow-black/20"
-    >
-      <h3 class="text-xl font-semibold mb-4 text-white">Ventas</h3>
-
-      <p class="mb-4 text-[#CCCCCC] text-sm">
-        Si te hemos vendido algo y quieres comunicarte con nosotros:
-      </p>
-
-      <ul class="space-y-3 text-[#CCCCCC]">
-        <li class="flex items-center gap-3 group">
-          <img src="/mail.png" alt="Correo" class="w-5 h-5 opacity-80" />
-          <a
-            href="mailto:ventas@lacelinaagricolaganadera.com"
-            class="hover:text-white transition-colors text-[13px] sm:text-sm block truncate"
-          >
-            ventas@lacelinaagricolaganadera.com
-          </a>
-          <button
-            class="copy-btn p-1.5 rounded-md bg-white/5 hover:bg-white/20 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
-            data-copy="ventas@lacelinaagricolaganadera.com"
-            title="Copiar correo"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4 stroke-[#CCCCCC]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
-              ></path>
-            </svg>
-          </button>
-        </li>
-        <li class="flex items-center gap-3">
-          <img src="/c.png" alt="WhatsApp" class="w-5 h-5 opacity-80" />
-
-          <a
-            href="https://wa.me/5493413204697"
-            target="_blank"
-            class="hover:text-white transition-colors text-sm"
-            >+54 9 3413 20-4697</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div
-      class="w-full rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03] bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl shadow-black/20"
-    >
-      <h3 class="text-xl font-semibold mb-4 text-white">Compras</h3>
-
-      <p class="mb-4 text-[#CCCCCC] text-sm">
-        Si te hemos comprado algo y quieres comunicarte con nosotros:
-      </p>
-
-      <ul class="space-y-3 text-[#CCCCCC]">
-        <li class="flex items-center gap-3 group">
-          <img src="/mail.png" alt="Correo" class="w-5 h-5 opacity-80" />
-          <a
-            href="mailto:compras@lacelinaagricolaganadera.com"
-            class="hover:text-white transition-colors text-[13px] sm:text-sm block truncate"
-          >
-            compras@lacelinaagricolaganadera.com
-          </a>
-          <button
-            class="copy-btn p-1.5 rounded-md bg-white/5 hover:bg-white/20 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
-            data-copy="compras@lacelinaagricolaganadera.com"
-            title="Copiar correo"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-4 h-4 stroke-[#CCCCCC]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
-              ></path>
-            </svg>
-          </button>
-        </li>
-
-        <li class="flex items-center gap-3">
-          <img src="/c.png" alt="WhatsApp" class="w-5 h-5 opacity-80" />
-
-          <a
-            href="https://wa.me/5491163651351"
-            target="_blank"
-            class="hover:text-white transition-colors text-sm"
-            >+54 9 11 6365-1351</a
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="w-full max-w-3xl mx-auto mt-4">
-    <div
-      class="w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8"
-    >
-    </div>
-
-    <div class="px-6 py-4 rounded-xl bg-black/10 border border-white/5">
-      <h3
-        class="text-sm font-bold mb-4 text-[#CCCCCC]/60 uppercase tracking-widest text-center"
-      >
-        Información Institucional
-      </h3>
-
-      <ul
-        class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-[#CCCCCC]/80 text-xs sm:text-[13px] list-none"
-      >
-        <li class="flex flex-col border-l border-[#3E7C4C]/40 pl-3">
-          <span class="text-[10px] uppercase text-[#3E7C4C] font-bold"
-            >Razón Social</span
-          >
-
-          <span class="font-medium text-white/70"
-            >AGRICOLA GANADERA CELINA SA</span
-          >
-        </li>
-
-        <li class="flex flex-col border-l border-[#3E7C4C]/40 pl-3">
-          <span class="text-[10px] uppercase text-[#3E7C4C] font-bold"
-            >CUIT</span
-          >
-
-          <span class="font-medium text-white/70">30-71003415-6</span>
-        </li>
-
-        <li class="flex flex-col border-l border-[#3E7C4C]/40 pl-3">
-          <span class="text-[10px] uppercase text-[#3E7C4C] font-bold"
-            >Condición IVA</span
-          >
-
-          <span class="font-medium text-white/70"
-            >IVA Responsable Inscripto</span
-          >
-        </li>
-
-        <li class="flex flex-col border-l border-[#3E7C4C]/40 pl-3">
-          <span class="text-[10px] uppercase text-[#3E7C4C] font-bold"
-            >Domicilio Comercial</span
-          >
-
-          <span class="font-medium text-white/70 italic"
-            >Jujuy 1389 Piso 21 Dpto "A" – Rosario</span
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
 </section>
-
-<script>
-  const setupCopy = () => {
-    const buttons = document.querySelectorAll(".copy-btn");
-
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", async () => {
-        const textToCopy = btn.getAttribute("data-copy");
-        if (!textToCopy) return;
-
-        try {
-          await navigator.clipboard.writeText(textToCopy);
-
-          // Feedback visual: Cambiar icono por un check
-          const originalHTML = btn.innerHTML;
-          btn.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 stroke-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                    `;
-
-          // Revertir icono después de 2 segundos
-          setTimeout(() => {
-            btn.innerHTML = originalHTML;
-          }, 2000);
-        } catch (err) {
-          console.error("Error al copiar: ", err);
-        }
-      });
-    });
-  };
-
-  // Inicializar
-  setupCopy();
-  // Re-ejecutar si usas ViewTransitions
-  document.addEventListener("astro:after-swap", setupCopy);
-</script>

@@ -1,16 +1,71 @@
 <header
   id="main-header"
-  class="fixed top-0 left-0 w-full overflow-x-hidden z-50 transition-all duration-300"
-  style="backdrop-filter: blur(12px); background: rgba(255,255,255,0.25);"
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+  style="backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.25); border-bottom: 1px solid rgba(255, 255, 255, 0.18);"
 >
-  <div
-    class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between text-white"
-  >
-    <a href="#inicio" class="text-xl font-bold tracking-tight">La Celina</a>
+  <div class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
+    <!-- Logo -->
+    <a
+      href="#inicio"
+      class="group flex items-center gap-2.5 transition-all duration-300"
+    >
+      <!-- Icon -->
 
-    <nav class="flex gap-6 text-sm font-medium">
-      <a href="#inicio" class="hover:text-green-700">Inicio</a>
-      <a href="#contacto" class="hover:text-green-700">Contacto</a>
+      <!-- Text -->
+      <span class="text-xl font-bold tracking-tight text-white drop-shadow-sm"
+        >La Celina</span
+      >
+    </a>
+
+    <!-- Navigation -->
+    <nav class="flex items-center gap-4">
+      <a
+        href="#inicio"
+        class="relative px-4 py-2 text-sm font-medium text-white rounded-lg transition-all duration-300 hover:bg-white/15"
+      >
+        Inicio
+      </a>
+
+      <!-- CTA Button -->
+      <a
+        href="#contacto"
+        class="group px-5 py-2.5 text-sm font-semibold rounded-lg transition-all duration-300 hover:scale-105"
+        style="background: #234332; color: white; box-shadow: 0 4px 12px rgba(35, 67, 50, 0.4);"
+      >
+        <span class="flex items-center gap-2">
+          Contactanos
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </span>
+      </a>
     </nav>
   </div>
 </header>
+
+<!-- Script opcional para intensificar el glass al scrollear -->
+<script>
+  const header = document.getElementById("main-header");
+
+  if (header) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.style.background = "rgba(255, 255, 255, 0.35)";
+        header.style.boxShadow = "0 4px 20px rgba(0, 0, 0, 0.08)";
+      } else {
+        header.style.background = "rgba(255, 255, 255, 0.25)";
+        header.style.boxShadow = "none";
+      }
+    });
+  }
+</script>

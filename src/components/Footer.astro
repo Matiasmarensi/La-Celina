@@ -1,5 +1,53 @@
-<footer class="bg-[#A67C52]/50 backdrop-blur-lg text-[#CCCCCC] mt-16">
-  <div class="max-w-7xl mx-auto px-6 py-8 text-center text-sm font-[Merriweather,serif] italic">
-    © {new Date().getFullYear()}  Agrícola Ganadera La Celina S.A. Todos los derechos reservados.
+<footer class="relative mt-0">
+  <!-- Fondo con gradiente verde -->
+  <div
+    class="absolute inset-0"
+    style="background: linear-gradient(180deg, #234332 0%, #1a3528 100%);"
+  >
+  </div>
+
+  <!-- Linea decorativa superior -->
+  <div
+    class="absolute top-0 left-0 right-0 h-px"
+    style="background: linear-gradient(90deg, transparent, rgba(62, 124, 76, 0.5), transparent);"
+  >
+  </div>
+
+  <div class="relative max-w-5xl mx-auto px-6 py-8">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+      <!-- Logo y Copyright -->
+      <div class="flex items-center gap-3">
+        <a href="#inicio" class="group flex items-center gap-2">
+          <span class="text-sm font-semibold text-white">La Celina</span>
+        </a>
+        <span class="hidden sm:block text-white/30">|</span>
+        <p class="text-white/50 text-sm">
+          © <span id="footer-year"></span> Agrícola Ganadera La Celina S.A.
+        </p>
+      </div>
+
+      <!-- Links de navegación -->
+      <nav class="flex items-center gap-6">
+        <a
+          href="#inicio"
+          class="text-white/60 text-sm hover:text-white transition-colors duration-300"
+        >
+          Inicio
+        </a>
+        <a
+          href="#contacto"
+          class="text-white/60 text-sm hover:text-white transition-colors duration-300"
+        >
+          Contacto
+        </a>
+      </nav>
+    </div>
   </div>
 </footer>
+
+<script>
+  const yearElement = document.getElementById("footer-year");
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear().toString();
+  }
+</script>
